@@ -1,0 +1,151 @@
+/* https://www.000webhost.com/ */
+/* http://www.dot.tk/ */
+
+/* 
+https://www.facebook.com/groups/creativeit */
+/* https://www.facebook.com/CreativeITInstitute/ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar .btn{
+    margin-left: 10px;
+}
+body .btn{
+    background-color:  	rgb(0, 128, 255);
+    border-radius: 15px;
+    font-size: 15px;  
+    padding: 4px 25px;
+    font-weight: 600;
+    color: white; 
+}
+.poran .imam {
+    position: relative;
+   
+}
+.poran{
+    position: relative;
+  font-family: 'Montserrat', sans-serif;
+  
+
+   
+   display: inline-block;
+   overflow: hidden;
+ 
+   
+   
+   
+}
+
+.poran::before {
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background:#fff;
+   border-radius: 10px;
+   box-sizing: border-box;
+  transform: scale(0, 1);
+
+  transform-origin: top right;
+  transition: transform 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
+  transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+
+}
+.poran:hover{
+   color: #000;
+  
+}
+.poran:hover::before {
+
+  transform: scale(1, 1);
+  
+  transform-origin: bottom left;
+}
+/*///////////////////// header section start//////////////////  */
+#header{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    
+}
+#header nav .navbar-brand{
+    color: 	rgb(0, 128, 255);   
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 0;
+} 
+#header .navbar-nav{
+  padding: 0px 20px;  
+}
+#header .nav-item{
+    padding: 0px 8px;
+    margin: 0px 5px;
+}
+#header .nav-item .nav-link{
+    font-size: 15px;
+    font-weight: 600;
+}
+/*/////////////////// header section end ////////////////// */
+
+/*///////////////// about start/////////////////  */
+#about{
+    padding-top: 60px;
+}
+#about .about-right img{
+    width: 85%;
+    height: auto;
+}
+#about2 .about2-left img{
+    width: 85%;
+    height: auto;
+}
+/* about end  */
+
+/* portfolio start  */
+
+#portfolio .portfolio-box img{
+    padding: 10px;
+    border: 2px solid 	rgb(0, 128, 255);
+    border-radius: 10px;
+}
+/* portfolio end  */
+
+/* contact start  */
+.contact-left{
+    text-align: center;
+
+}
+#contact .contact-right img{
+    width: 85%;
+    height:400px;
+    margin-top: -25px;
+    
+}
+
+.social-container{
+    margin: 20px 0;
+}
+.social-container a{
+    display: inline-block;
+    border-radius: 20%;
+    margin: 0px 5px;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    color: gray;
+}
+
+/* contact end  */
+
+
+
+/* media query */
+@media screen and (max-width: 768px) {
+    body.btn{
+        float: left;
+        
+    }
+  }
